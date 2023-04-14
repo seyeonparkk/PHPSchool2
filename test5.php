@@ -22,3 +22,22 @@ $result = strcmp($var1, $var2);
 echo "result : ".$result;
 
 ?>
+<?php
+$str="abcdef";
+$find="c";
+$pos=$strpos($str,$find);
+echo "pos".$pos;
+?>
+<hr>
+<?php
+$str="mary had a little lamb and she loved it so MUCH";
+echo strtolower($str)."<br/>";
+echo strtoupper($str);
+?>
+<?php
+$str="hellophpwelcome";
+$result=substr($str,5,5);
+echo $result;    //phpwe
+$result2=substr($str,3);
+echo $result2;
+?>
