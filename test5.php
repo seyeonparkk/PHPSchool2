@@ -39,6 +39,7 @@ echo "lower : ".$low."<br/>";
 echo "upper : ".$up."<br/>";
 ?>
 
+
 <hr>
 <?php
 $str = "hellophpwelcome";
