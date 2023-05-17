@@ -7,6 +7,7 @@ $Filename="data.txt";
 // fwrite($fp,$str1);
 // fclose($fp);
 // echo"저장되었습니다"
+echo "안녕";
 
 
 //파일읽기
