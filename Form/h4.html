@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"],
+        .form-group input[type="email"],
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .form-group .address-group {
+            display: flex;
+        }
+
+        .form-group .address-group input[type="text"] {
+            flex: 1;
+        }
+
+        .form-group .phone-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-group .phone-group select {
+            margin-right: 5px;
+        }
+
+        .form-group .inline-checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-group .inline-checkbox-group label {
+            margin-right: 10px;
+        }
+
+        .form-group button {
+            width: 48%;
+            padding: 10px;
+            background-color: #03c75a;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-group button[type="submit"]:hover {
+            background-color: #029c4b;
+        }
+
+        .form-group button[type="reset"]:hover {
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <button type="button" onclick="checkUsername()">Check Availability</button>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label>Gender:</                <label class="inline-checkbox-group">
+                    <input type="checkbox" name="gender" value="male"> Male
+                </label>
+                <label class="inline-checkbox-group">
+                    <input type="checkbox" name="gender" value="female"> Female
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Address:</label>
+                <div class="address-group">
+                    <input type="text" name="address" placeholder="Address" required>
+                    <button type="button" onclick="searchAddress()">Find Address</button>
+                </div>
+                <input type="text" name="detail-address" placeholder="Detail Address">
+            </div>
+            <div class="form-group">
+                <label>Phone Number:</label>
+                <div class="phone-group">
+                    <select name="phone-carrier">
+                        <option value="skt">SKT</option>
+                        <option value="kt">KT</option>
+                        <option value="lgu+">LGU+</option>
+                    </select>
+                    <input type="text" name="phone-number" placeholder="Phone Number" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Interests:</label>
+                <div class="inline-checkbox-group">
+                    <label><input type="checkbox" name="interests" value="imported-cars"> Imported Cars</label>
+                    <label><input type="checkbox" name="interests" value="domestic-cars"> Domestic Cars</label>
+                    <label><input type="checkbox" name="interests" value="suv"> SUV</label>
+                    <label><input type="checkbox" name="interests" value="compact-cars"> Compact Cars</label>
+                    <label><input type="checkbox" name="interests" value="lpg"> LPG</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Sign Up</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- JavaScript for form validation or other functions -->
+    <script>
+        function checkUsername() {
+            // Add your logic for checking username availability here
+            alert("Checking username availability...");
+        }
+
+        function searchAddress() {
+            // Add your logic for address search here
+            alert("Searching for address...");
+        }
+    </script>
+</body>
+</html>

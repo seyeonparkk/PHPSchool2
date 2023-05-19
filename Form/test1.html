@@ -35,7 +35,27 @@
                 <button type="button">확인</button>
                 <button type="submit" class="btn btn-danger">입력완료</button>
                 <button type="reset" class="btn btn-primary">다시입력</button>
-                
+                <h1>가고싶은 도시는?</h1>
+                <select name="sel" multiple size="2">
+                    <option value="서울">서울</option>
+                    <option value="부산">부산</option>
+                    <option value="대전">대전</option>
+                    <option value="제주 selected ">제주</option>
+                </select>
+                <hr>
+                <input type="text" list="city">
+                <datalist id="city">
+                    <option value="usa">usa</option>
+                    <option value="japan">japan</option>
+                    <option value="korea">korea</option>
+                </datalist>
+                <br/>
+                이메일 : <input type="email" name="user_email"/>
+                <labe for="pass">비밀번호</labe>
+                <input type="password" id="pass" value=""/>
+                <input type="color" value="#ff0000" onchange="document.body.style.color=this.value">
+                <button type="submit" class="btn btn-danger">입력완료</button>
+                <textarea name="txt" rows="10" cols="15">자기소개를 하세요</textarea>
             </form>
         </form>
 
