@@ -39,7 +39,6 @@ echo "lower : ".$low."<br/>";
 echo "upper : ".$up."<br/>";
 ?>
 
-
 <hr>
 <?php
 $str = "hellophpwelcome";
@@ -63,10 +62,4 @@ $str=explode("/",$str);
 for ( $s : $str) {
     echo "explode:".$s;
 }
-?>
-<?php
-$txt="You should eat fruits, shoudl not buy";
-$result=str_replace("should","cluld",$txt);
-echo "변경전 문자열 : ".$txt;
-echo "변경후 문자열 : ".$result;
 ?>
