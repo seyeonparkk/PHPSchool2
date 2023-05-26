@@ -1,0 +1,9 @@
+<?php
+$one=$_POST["1"]; 
+$two=$_POST["2"]; 
+$thr=$_POST["3"]; 
+$four=$_POST["4"]; 
+$five=$_POST["5"]; 
+$zzak=0;
+$hall=0;
+if("")
