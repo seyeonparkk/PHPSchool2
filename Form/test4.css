@@ -1,0 +1,76 @@
+* {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #F1A3B0;
+}
+
+/* 두 번째 배경 색 칠하기 */
+.container {
+    background-color: #FFBFCB;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+}
+.login_box {
+    background-color: #FFBFCB;
+}
+.details_box {
+    background-color: #FFBFCB;
+}
+table {
+    background-color: #FFBFCB;
+}
+table td{
+    background-color: #FFBFCB;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+table {
+    width: 1000px;
+    height: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.other#skip {
+    background-color: #FFBFCB;
+    color: #FFBFCB;
+}
+
+/*  배경 색 하얀색으로 변경 */
+input {
+    background-color: white;
+}
+button {
+    background-color: white;
+}
+select {
+    background-color: white;
+}
+option {
+    background-color: white;
+}
+textarea {
+    background-color: white;
+}
+
+input#phone-head {
+    width: 50px;
+}
+input#phone-body {
+    width: 100px;
+}
+
+.buttons {
+    width: fit-content;
+    margin: auto;
+}
