@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>회원가입</title>
+  <style>
+    body {
+      background-color: pink;
+    }
+    
+    .container {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid gray;
+    }
+    
+    .radio-group label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .checkbox-group label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .button-container button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="username">아이디</label>
+        <input type="text" id="username" name="username" placeholder="아이디를 입력하세요">
+        <button type="button" onclick="checkDuplicate()">중복확인</button>
+      </div>
+      <div class="form-group">
+        <label for="password">비밀번호</label>
+        <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요">
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">비밀번호 확인</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="비밀번호를 다시 입력하세요">
+      </div>
+      <div class="form-group">
+        <label for="name">성명</label>
+        <input type="text" id="name" name="name" placeholder="성명을 입력하세요">
+      </div>
+      <div class="form-group">
+        <label>성별</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="남자">남자</label>
+          <label><input type="radio" name="gender" value="여자">여자</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">이메일</label>
+        <input type="email" id="email" name="email" placeholder="이메일을 입력하세요">
+      </div>
+      <div class="form-group">
+        <label for="address">주소</label>
+        <input type="text" id="address" name="address" placeholder="직접입력">
+        <button type="button" onclick="searchAddress()">주소찾기</button>
+      </div>
+      <div class="form-group">
+        <label for="detail-address">상세주소</label>
+        <input type="text" id="detail-address" name="detail-address" placeholder="상세주소를 입력하세요">
+    </div>
+    <div class="form-group">
+      <label for="mobile">휴대폰 번호</label>
+      <input type="text" id="mobile" name="mobile" placeholder="휴대폰 번호를 입력하세요">
+    </div>
+    <div class="form-group">
+      <label for="interest">관심도</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="interest" value="수입차">수입차</label>
+        <label><input type="checkbox" name="interest" value="국산차">국산차</label>
+        <label><input type="checkbox" name="interest" value="SUV">SUV</label>
+        <label><input type="checkbox" name="interest" value="경차">경차</label>
+        <label><input type="checkbox" name="interest" value="LPG">LPG</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="introduction">자기소개</label>
+      <textarea id="introduction" name="introduction" rows="5" placeholder="간단한 자기소개를 입력하세요"></textarea>
+    </div>
+    <div class="button-container">
+      <button type="submit">가입하기</button>
+      <button type="reset">다시 입력하기</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
