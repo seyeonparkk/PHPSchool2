@@ -1,4 +1,4 @@
-<style>
+ㅁ<style>
     h1 {
         color : red;
     }
@@ -49,17 +49,28 @@ $result2= substr($str, 3);
 echo $result2;
 ?>
 <hr>
+<br>
 <?php
 $arr=array("pizza1","pizza2","pizza3","pizza4","pizza5");
 $str = implode(",",$arr);
 echo "implode:".$str;
 ?>
-
+<br>
 <hr>
 <?php
 $str = "apple/mango/strawberry/melon";
 $str=explode("/",$str);
-for ( $s : $str) {
+foreach ( $str as $s ) {
     echo "explode:".$s;
+    echo "<br>";
 }
 ?>
+<br><br>
+<?php
+$txt = "You should eat fruits, should not buy";
+$result = str_replace('should','could',$txt);
+echo "변경 전 문자열 : ".$txt;
+echo "<br>";
+echo "변경 후 문자열 : ".$result;
+?>
+<br>
